@@ -1,0 +1,172 @@
+/* Секция */
+.inv-section {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-m);
+    overflow: hidden;
+    font-size: var(--font-text-size);
+    line-height: var(--line-height-normal);
+}
+/* Заголовок секции */
+.inv-section .inv-header {
+    background-color: var(--background-secondary);
+    padding: 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+.inv-section .inv-header:hover {
+    background-color: var(--background-modifier-border);
+}
+
+.inv-header .inv-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.inv-title .inv-icon {
+    width: 16px;
+    height: 16px;
+    color: inherit;
+    flex-shrink: 0;
+}
+.inv-title .inv-text {
+    display: flex;
+    flex-direction: column;
+}
+.inv-text .inv-title {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.int-text .inv-desc {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.inv-header .inv-chevron {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted);
+    transition: transform 0.2s ease;
+    transform: rotate(90deg);
+}
+.inv-section.inv-collapsed .inv-header .inv-chevron {
+    transform: rotate(-0deg);
+}
+
+/* CONTENT - содержимое */
+.inv-section .inv-content {
+    padding: 12px 12px;
+    transition: max-height .3s ease, padding .3s ease, opacity .2s ease;
+    max-height: 2000px;
+    opacity: 1;
+    overflow: hidden;
+}
+.inv-section.inv-collapsed .inv-content {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+}
+.inv-section .inv-content .inv-item {
+    margin-bottom: 14px;
+    padding-left: 10px;
+    border-left: 3px solid;
+}
+.inv-section .inv-content .inv-item:last-child {
+    margin-bottom: 0;
+}
+.inv-section .inv-content .inv-item .inv-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    /*letter-spacing: 0.2px;*/
+}
+.inv-section .inv-content .inv-item .inv-desc {
+    /*font-weight: 600;*/
+    margin-bottom: 8px;
+    font-size: 0.85em;
+    /*text-transform:  uppercase;*/
+    /*letter-spacing: 0.4px;*/
+}
+
+/* строки с данными */
+.inv-item-row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 4px;
+    font-family: var(--font-monospace);
+    position: relative;
+    padding: 4px 80px 4px 4px;
+    border-radius: var(--radius-s);
+    margin-left: -4px;
+    cursor: pointer;
+    transition: background-color .15s;
+}
+.inv-item-row:hover {
+    background-color: var(--background-secondary);
+}
+.inv-item-row.inv-copied {
+    background-color: rgba(76,175,80,.25);
+}
+.inv-item-row.inv-copied:after {
+    content: "Скопировано";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4caf50;
+    font-size: .8em;
+    font-weight: 500;
+    opacity: 1;
+    font-family: var(--font-text);
+}
+.inv-item-row .inv-item-label {
+    color: var(--text-muted);
+    min-width: 220px;
+    flex-shrink: 0;
+    padding-right: 8px;
+}
+.inv-item-row .inv-item-value {
+    color: var(--text-normal);
+    word-break: break-all;
+    flex: 1;
+}
+
+.inv-item-row .inv-item-pwd {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 2px;
+    opacity: 0;
+    transition: opacity .15s;
+}
+.inv-item-row:hover .inv-item-pwd {
+    opacity: 1;
+}
+
+.inv-item-row .inv-item-pwd svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+}
+
+/* hr сепаратор */
+.inv-section  .inv-hr {
+    border: none;
+    height: 1px;
+    background-color: var(--background-modifier-border);
+    margin: 6px 0;
+}

@@ -1,0 +1,14 @@
+{
+  "id": "inventory",
+  "name": "Inventory",
+  "version": "0.0.1",
+  "minAppVersion": "1.4.0",
+  "description": "Structured data from YAML blocks in the form of an interactive inventory with support for password hiding.",
+  "author": "Azretik",
+  "authorUrl": "https://github.com/azretik",
+  "isDesktopOnly": false,
+  "main": "main.js",
+  "fundingUrl": {
+    "Donation alerts": "https://donationalerts.com/r/azretik"
+  }
+}
