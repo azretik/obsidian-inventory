@@ -19,7 +19,7 @@ Structured data from YAML blocks in the form of an interactive inventory with su
 3. Включите плагин
 
 ## Ручная установка
-1. Скачайте плагин с github [Скачать](https://github.com/azretik/inventory-obsidian/archive/refs/heads/main.zip)
+1. Скачайте плагин с github [Скачать](https://github.com/azretik/obsidian-inventory/archive/refs/heads/master.zip)
 2. Скопируйте его в папку вашего харнилища `хранилище/.obsidian/plugins`
 3. Включите плагин в настройках Obsidian
 
