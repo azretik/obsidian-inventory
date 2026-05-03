@@ -1,5 +1,5 @@
 # inventory-obsidian
-Structured data from YAML blocks in the form of an interactive inventory with support for password hiding
+Structured data from YAML blocks in the form of an interactive inventory with support for password hiding.
 
 # RU
 Отображает структурированные данные из YAML-блоков в виде интерактивного инвентаря.
@@ -20,7 +20,7 @@ Structured data from YAML blocks in the form of an interactive inventory with su
 
 ## Ручная установка
 1. Скачайте плагин с github [Скачать](https://github.com/azretik/inventory-obsidian/archive/refs/heads/main.zip)
-2. Скопируйте его в папку вашего харнилища *хранилище/.obsidian/plugins*
+2. Скопируйте его в папку вашего харнилища `хранилище/.obsidian/plugins`
 3. Включите плагин в настройках Obsidian
 
 ## Использование
