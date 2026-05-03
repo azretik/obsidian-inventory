@@ -1,4 +1,4 @@
-# inventory-obsidian
+# obsidian-inventory
 Structured data from YAML blocks in the form of an interactive inventory with support for password hiding.
 
 # RU
